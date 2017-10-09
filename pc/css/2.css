@@ -1,0 +1,89 @@
+*{
+				margin: 0;
+				padding: 0;
+			}
+			.lan1{
+				width: 940px;
+				margin: 0 auto;
+				box-shadow: 0 2px 3px  #dfdfdf;
+				background: white;
+				padding: 0.1px 29px 30px;
+				margin-top: 20px;
+				
+			}
+			.lan2{
+				margin: 0;
+				color: #d71921;
+				font-size: 12px;
+				height: 25px;
+				margin-top: 18px;
+				border-bottom: 1px solid #d8d8d8;
+			}
+			.lan3{
+				margin: 15px 0;
+				font-size: 18px;
+			}
+			.lan4{
+				height: 308px;
+				width: 878px;
+				display: flex;
+				justify-content: space-between;
+			}
+			.lan41{
+				height: 263px;
+				width: 200px;
+				box-sizing: border-box;
+				padding: 10px;
+				cursor: pointer;
+				border: 1px solid transparent;
+				transition: all 0.5s;
+			}
+			.lan41:hover{
+				border: 1px solid #ccc;
+				box-shadow: 0 0 1px #999999;
+				height: 308px;
+			}
+			.lan41:hover .piccc{
+				height: 34px;
+			}
+			.lan41>p:nth-child(3){
+				font-size: 15px;
+				color: #c80a28;
+				font-weight: bold;
+			}
+			.lan41>p:nth-child(4){
+				margin: 6px 0;
+				font-size: 12px;
+				
+			}
+			.lan411{
+				width: 180px;
+				height: 180px;
+				position: relative;
+			}
+			.lan411 img{
+				position: absolute;
+			}
+			.lan42{
+				
+				display: none;
+			}
+			.piccc{
+				height: 0px;
+				overflow: hidden;
+				transition: all 0.5s;
+			}
+			.piccc1{
+				width: 32px;
+				height: 32px;
+				border: 1px solid #f5f5f5;
+				float: left;
+				cursor: pointer;
+			}
+			.piccc1:hover{
+				border: 1px solid #999999;
+			}
+			.piccc1 img{
+				width: 100%;
+				height: 100%;
+			}

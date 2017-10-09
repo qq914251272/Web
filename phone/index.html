@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/11.css" />
+		<script type="text/javascript" src="js/angular.js" ></script>
+		<script type="text/javascript" src="js/angular-ui-router.js" ></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+		<script>
+        	document.documentElement.style.fontSize = innerWidth/25+"px"
+        	var app=angular.module("app",["ui.router"]);
+        	    app.config(function($stateProvider,$urlRouterProvider){
+			 	 $urlRouterProvider.otherwise('/')
+			 	  $stateProvider
+			 	  .state({
+			 	  	 name:'one',
+			 	  	 url:"/",
+			 	  	 templateUrl:"ind1.html",
+			 	  	 controller:function(){
+			 	  	 	var mySwiper = new Swiper('.swiper-container', {
+							   autoplay: 2000,
+							   autoplayDisableOnInteraction : false,
+							   pagination : '.swiper-pagination',
+							   scrollbar:'.swiper-scrollbar',
+							   prevButton:'.swiper-button-prev',
+						       nextButton:'.swiper-button-next',
+							   effect : 'flip',
+						       flip: {
+				            slideShadows : true,
+				            limitRotation : true,
+				       },
+				       observer:true,
+				       observeParents:true
+				     })
+			 	  	 }
+			 	  })
+			 	  .state({
+			 	  	 name:'two',
+			 	  	 url:"/2",
+			 	  	 templateUrl:"ind2.html",
+			 	  	 controller:function(){
+			 	  	 	var mySwiper = new Swiper('.swiper-container', {
+					   autoplay: 2000,
+					   autoplayDisableOnInteraction : false,
+					   pagination : '.swiper-pagination',
+					   scrollbar:'.swiper-scrollbar',
+					   prevButton:'.swiper-button-prev',
+				       nextButton:'.swiper-button-next',
+					   effect : 'flip',
+				       flip: {
+				            slideShadows : true,
+				            limitRotation : true,
+					       },
+					       observer:true,
+					       observeParents:true
+                  })
+			 	  	 }
+			 	  })
+			 	  .state({
+			 	  	 name:'th',
+			 	  	 url:"/3",
+			 	  	 templateUrl:"ind3.html",
+			 	  	 controller:function(){
+			 	  	 	var mySwiper = new Swiper('.swiper-container', {
+							   autoplay: 2000,
+							   autoplayDisableOnInteraction : false,
+							   pagination : '.swiper-pagination',
+							   scrollbar:'.swiper-scrollbar',
+							   prevButton:'.swiper-button-prev',
+						       nextButton:'.swiper-button-next',
+							   effect : 'flip',
+						       flip: {
+						            slideShadows : true,
+						            limitRotation : true,
+						       },
+						       observer:true,
+						       observeParents:true
+						     })
+					 	  	 }
+			 	  })
+			 	  .state({
+			 	  	 name:'fo',
+			 	  	 url:"/4",
+			 	  	 templateUrl:"ind4.html",
+			 	  	 controller:function(){
+			 	  	 	var mySwiper = new Swiper('.swiper-container', {
+						   autoplay: 2000,
+						   autoplayDisableOnInteraction : false,
+						   pagination : '.swiper-pagination',
+						   scrollbar:'.swiper-scrollbar',
+						   prevButton:'.swiper-button-prev',
+					       nextButton:'.swiper-button-next',
+						   effect : 'flip',
+					       flip: {
+					            slideShadows : true,
+					            limitRotation : true,
+					       },
+					       observer:true,
+					       observeParents:true
+					     })
+			 	  	 }
+			 	  })
+			})
+	$(function(){
+			
+	 var aas = $(".top a")
+       var lis = $('.top li')
+       lis.on("click",function(){
+       	aas.css("color","#74a3ef")
+       	$(this).children().css("color","white")
+       	lis.css("border-bottom-color","transparent")
+       	$(this).css("border-bottom-color","white")
+       })
+       aas.eq(0).css("color","white")
+       lis.eq(0).css("border-bottom-color","white")
+    	})
+        </script>
+	</head>
+<body>
+	<div class="top">
+		<ul>
+			<li><a href="#!/">推荐</a></li>
+			<li><a href="#!/2">软件</a></li>
+			<li><a href="#!/3">游戏</a></li>
+			<li><a href="#!/4">榜单</a></li>
+		</ul>
+	</div>
+	<ui-view></ui-view>
+        
+	</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.top{
+				width: 940px;
+				margin: 30px auto 0;
+			}
+			.top img{
+				width: 245px;
+			}
+			.sec{
+				width: 940px;
+				height: 541px;
+				margin: 0 auto;
+				border: 1px solid #e2e2e2;
+				box-shadow: 0 0 1px 1px #e2e2e2;
+				position: relative;
+			}
+			.leftpic{
+				width: 245px;
+				float: left;
+			}
+			.sec1{
+				width: 499px;
+				height: 100%;
+				float: left;
+				border-right:1px solid #f1f1f1 ;
+				position: relative;
+			}
+			.lo{
+				font-size: 23px;
+				color: #444444;
+				width: 398px;
+				margin: 45px auto 30px;
+			}
+			.sec1>input{
+				display: block;
+				width: 383px;
+				height: 54px;
+				outline: none;
+				border-radius: 3px;
+				border: 1px solid #d6d6d6;
+				margin: 12px auto;
+				padding-left: 15px;
+				
+			}
+			.yz{
+				width: 135px;
+				height: 36px;
+				border-left: 1px dashed #d6d6d6;
+				box-sizing: border-box;
+				padding-left: 15px;
+				position: absolute;
+				right:65px ;
+				top: 251px;
+				cursor: pointer;
+			}
+			.yx img{
+				width: 120px;
+			}
+			.lo1{
+				width: 400px;
+				font-size: 12px;
+				margin: 0 auto;
+				height: 16px;
+			}
+			.lo1 span{
+				float: right;
+			}
+			.dl{
+				height: 48px;
+				width: 400px;
+				margin: 20px auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			.dl>button{
+				display: inline-block;
+				width: 192px;
+				height: 46px;
+				border: 1px solid #d71722;
+				outline: none;
+				border-radius: 3px;
+				font-size: 15px;
+				cursor: pointer;
+			}
+			.dl>button:nth-child(1){
+				background: #d71722;
+				color: white;
+			}
+			.dl>button:nth-child(2){
+				background: white;
+				color: #d71722;
+			}
+			.dl>button:nth-child(2):hover{
+				background: #f4f4f4;
+			}
+			.dl>button:nth-child(1):hover{
+				background: #c71722;
+			}
+			.lo2{
+				width: 420px;
+				color: #999;
+				font-size: 12px;
+				margin: 125px auto 0;
+			}
+			.right{
+				width: 195px;
+				height: 100%;
+				float: right;
+			}
+			.rigp{
+				margin:72px 35px 10px;
+			}
+			.rigtu{
+				width: 110px;
+				height: 113px;
+				margin: 0 auto;
+			}
+			.rigtu ul{
+				width: 100%;
+				height: 100%;
+				list-style: none;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+			}
+			.rigtu ul>li{
+				width: 50px;
+				height: 50px;
+				margin: 5px 0;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			.rigtu ul>li:hover img{
+				transition: all 0.5s;
+				transform: translateY(-54px);
+			}
+			.rigpic{
+				display: block;
+				margin: 110px auto 0;
+			}
+			.rigp1{
+				width: 125px;
+				margin: 10px auto;
+				font-size: 12px;
+			}
+			.dl a{
+				text-decoration: none;
+				display:block;
+				width:100%;
+				height:100%;
+				color: #d71722;
+				line-height: 46px;
+			}
+			.fh{
+				width: 245px;
+				height: 34px;
+				font-size: 14px;
+				box-sizing: border-box;
+				padding-left: 15px;
+				background: #d71921;
+				position: absolute;
+				line-height: 34px;
+				top:0;
+				left: 0;
+			}
+			.fh a{
+				text-decoration: none;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<img src="img/logo.png" />
+		</div>
+		<div class="sec">
+			<div class="fh">
+			   <a href="index.html">< 返回安踏官网</a>	
+			</div>
+		<img src="img/01.png" class="leftpic" />
+		<div class="sec1">
+		<p class="lo">账户登录</p>
+		<input type="text" placeholder="邮箱/手机" class="phone" />
+		<input type="password" placeholder="密码" />
+		<input type="text" placeholder="验证码" />
+		<div class="yz">
+			<img src="img/index.png" />
+		</div>
+	     <p class="lo1"><span>忘记密码?</span></p>
+	     <div class="dl">
+	      <button>登录</button>
+	      <button><a href="reg.html">免费注册</a></button>
+	     </div>
+	     <p class="lo2">Copyright(C) 2015 by www.anta.com</p>
+		</div>
+		<div class="right">
+		 	<p class="rigp">其他登录方式</p>
+		 	<div class="rigtu">
+		 	<ul>
+		 		<li><img src="img/1-1.png" /><img src="img/1.png" /></li>
+		 		<li><img src="img/2-1.png" /><img src="img/2.png" /></li>
+		 		<li><img src="img/3-1.png" /><img src="img/3.png" /></li>
+		 		<li><img src="img/4-1.png" /><img src="img/4.png" /></li>
+		 	</ul>
+		 	</div>
+		 	<img src="img/qrcode.jpg" class="rigpic" />
+		 	<p class="rigp1">微信加关注  享专属优惠</p>
+		</div>
+		</div>
+		<script type="text/javascript">
+			var inpEle = $(".phone")
+			var myreg = /^1[3458]\d{9}$/;
+			var myreg1 = /^\d{1,9}@[qQ][qQ]\.(com|cn)$/;
+			inpEle.on("blur",function(){
+				var inpVal = $(this).val();
+			if (myreg1.exec(inpVal) || myreg.exec(inpVal)){
+			  inpEle.css("border","1px solid #d6d6d6")
+			}else{
+				alert('请输入正确的手机号或邮箱')
+			 inpEle.css("border","1px solid red")
+			}
+			})
+		</script>
+	</body>
+</html>

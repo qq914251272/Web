@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.swiper-container {
+  height: 11.2rem; }
+
+.swiper-wrapper img {
+  width: 100%;
+  height: 100%; }
+
+.top {
+  height: 2.9333333333rem;
+  width: 100%;
+  background: #006fe8; }
+
+.top a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #74a3ef;
+  font-size: 0.8666666667rem;
+  box-sizing: border-box;
+  padding: 0.9333333333rem 1.3333333333rem; }
+
+.top > ul {
+  width: 18.6666666667rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  list-style: none; }
+
+.top li {
+  flex: 1;
+  height: 2.6666666667rem;
+  border-bottom: 0.2666666667rem solid transparent; }
+
+.top1 {
+  width: 100%;
+  height: 5.7333333333rem;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6; }
+
+.top2 {
+  width: 19.3333333333rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.top21 {
+  width: 3.4rem;
+  height: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.3333333333rem; }
+  .top21 img {
+    width: 2.6666666667rem;
+    margin-top: 0.6666666667rem; }
+
+.top3 {
+  color: #4c4c4c;
+  font-size: 0.8666666667rem;
+  height: 3.5333333333rem;
+  line-height: 3.5333333333rem;
+  padding-left: 0.7333333333rem; }
+
+.top4 {
+  width: 23.3333333333rem;
+  height: 5.3333333333rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 0.7333333333rem;
+  padding-bottom: 0.7333333333rem;
+  border-bottom: 1px solid #e6e6e6; }
+  .top4 img {
+    width: 3.7333333333rem;
+    border-radius: 5px;
+    margin-right: 0.6666666667rem;
+    float: left; }
+  .top4 .top41 {
+    text-decoration: none;
+    width: 14.3333333333rem;
+    height: 100%;
+    float: left; }
+  .top4 .top41 p:nth-child(1) {
+    color: black;
+    font-size: 0.8rem; }
+  .top4 .top41 p:nth-child(2) {
+    font-size: 0.8rem;
+    color: #c0c0c0;
+    margin-top: 0.2rem; }
+  .top4 .top41 p:nth-child(3) {
+    font-size: 0.7333333333rem;
+    width: 100%;
+    color: #7f7f7f;
+    margin-top: 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .top4 .top42 {
+    float: right;
+    height: 100%;
+    width: 58px; }
+    .top4 .top42 div {
+      width: 56px;
+      height: 28px;
+      border: 1px solid #006fe8;
+      border-radius: 3px;
+      font-size: 12px;
+      box-sizing: border-box;
+      padding: 4px 14px;
+      color: #006fe8; }
+    .top4 .top42 p {
+      font-size: 11px;
+      color: #b3b3b3;
+      margin-top: 5px; }
+
+/*# sourceMappingURL=11.css.map */
